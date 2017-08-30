@@ -1,79 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">    
-    <link rel="stylesheet" href="static/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <script src="js/script.js"></script>
-    <title>Erick Ruiz | Full Stack Web Developer</title>
-</head>
-
-<body>
-    <div id="wrapper">
-        <div class="fixed-action-btn">
-            <a class="btn-floating btn-large black"><i class="large material-icons">menu</i></a>
-            <ul>
-                <li><a id="scrollToHome" class="btn-floating green"><i class="material-icons">home</i></a></li>
-                <li><a id="scrollToAboutMe" class="btn-floating orange"><i class="material-icons">school</i></a></li>
-                <li><a id="scrollToProjects" class="btn-floating blue"><i class="material-icons">work</i></a></li>                
-                <li><a id="scrollToFooter" class="btn-floating red"><i class="material-icons">email</i></a></li>
-            </ul>
-        </div>
-        <div id="hero" class="animated fadeInDown">
-            <div class="header">
-                <h1 class="welcomeText animated fadeInLeft">Hi, Im Erick and I</h1>
-                <div>
-                    <div class="welcomeText fadeInLeft" id="magic"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">    
+        <link rel="stylesheet" href="static/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <script src="js/script.js"></script>
+        <title>Erick Ruiz | Full Stack Web Developer</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large black"><i class="large material-icons">menu</i></a>
+                <ul>
+                    <li><a id="scrollToHome" class="btn-floating green"><i class="material-icons">home</i></a></li>
+                    <li><a id="scrollToAboutMe" class="btn-floating orange"><i class="material-icons">school</i></a></li>
+                    <li><a id="scrollToProjects" class="btn-floating blue"><i class="material-icons">work</i></a></li>                
+                    <li><a id="scrollToFooter" class="btn-floating red"><i class="material-icons">email</i></a></li>
+                </ul>
+            </div>
+            <div id="hero" class="animated fadeInDown">
+                <div class="header">
+                    <h1 class="welcomeText animated fadeInLeft">Hi, Im Erick and I</h1>
+                    <div>
+                        <div class="welcomeText fadeInLeft" id="magic"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="aboutMe" class="row">
-            <div id="aboutMeContainer" class="col s12">
-                <div id="aboutMeHeader" class="col s12 m5">
-                    <img class="responsive-img circle" src="static/me.jpg" alt="selfie">
-                </div> 
-                <div id="aboutMeText" class="col s12 m6">
-                    <p id="welcomeText">Welcome to my page!</p>
-                    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fugit corrupti voluptate distinctio in neque recusandae voluptas fugiat! Mollitia officiis autem perferendis veritatis facere reprehenderit, officia corporis eligendi atque quis!</p>
-                    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, fugit corrupti voluptate distinctio in neque recusandae voluptas fugiat! Mollitia officiis autem perferendis veritatis facere reprehenderit, officia corporis eligendi atque quis!</p>
+            <div id="aboutMe" class="row">
+                <div id="aboutMeContainer" class="col s12">
+                    <div id="aboutMeHeader" class="col s12 m5">
+                        <img class="responsive-img circle" src="static/me.jpg" alt="selfie">
+                    </div> 
+                    <div class="col s12 m6 aboutMeText">
+                        <p style="text-align:center;font-size:30px;">About me</p>
+                        <p>After taking my first progamming course (c++) during my first year in community college, not having any programming experience before, I was amazed and intreged on how fun programming can be. That course was all I needed to go on a purse a careear as a developer.</p>
+                        <p>Having just graduated with a C.S. degree and finishing up a coding bootcamp, I believe I have the skills to join a team of developers to build functional yet user friendly code!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="row">
+                <h3 id="recentProjectsText">Here are some of my recent projects :)</h3>            
+                <div class="col s12 m5 projectContainer">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="static/pinterest.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Pinterest<i class="material-icons right">more_vert</i></span>
+                            <div class="chip">
+                                <img id="image" src="static/github.png" alt="Contact Person"><a href="https://github.com/ErickZ33/Pinterest-Clone">Github</a>
+                            </div>
+                            <div class="chip">
+                                <img id="image" src="static/heroku.png" alt="Contact Person"><a href="#">Try it!</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <p class="projectTitle">Pinterest Clone</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consequatur recusandae? Sint, reprehenderit. Repudiandae animi voluptatibus ex corporis dolorem voluptatem numquam dolores ipsam iure. Quisquam sit cum corporis dolorum quos.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consequatur recusandae? Sint, reprehenderit. Repudiandae animi voluptatibus ex corporis dolorem voluptatem numquam dolores ipsam iure. Quisquam sit cum corporis dolorum quos.</p>                    
+                </div>
+            </div>
+            <div id="content" class="row">
+                <div class="col s12 m5 projectContainer">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="static/stubhub.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">StubHub<i class="material-icons right">more_vert</i></span>
+                            <div class="chip">
+                                <img id="image" src="static/github.png" alt="Contact Person"><a href="https://github.com/sozo2/stubhub_clone">Github</a>
+                            </div>
+                            <div class="chip">
+                                <img id="image" src="static/heroku.png" alt="Contact Person"><a href="#">Try it!</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <p class="projectTitle">StubHub Clone</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consequatur recusandae? Sint, reprehenderit. Repudiandae animi voluptatibus ex corporis dolorem voluptatem numquam dolores ipsam iure. Quisquam sit cum corporis dolorum quos.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consequatur recusandae? Sint, reprehenderit. Repudiandae animi voluptatibus ex corporis dolorem voluptatem numquam dolores ipsam iure. Quisquam sit cum corporis dolorum quos.</p>                    
+                </div>
+            </div>
+            <div class="col s12 aboutMeText">
+                <p style="text-align:center">What I bring to the table</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde, explicabo voluptatum voluptate nisi eum dolor provident! Quis aperiam, laboriosam aut voluptatibus dolorem, perferendis libero minus sequi sed consequuntur tempora?</p>
+            </div> 
+            <div id="footer" class="row">
+                <div class="col s12">
+                    <a class="btn btn-floating pulse socialLinks" href="https://github.com/ErickZ33"><img class="socialLinks" src="static/github.png" alt=""></a>
+                    <a class="btn btn-floating pulse socialLinks" href="https://www.linkedin.com/in/erick-ruiz-361523104/"><img class="socialLinks" src="static/in.png" alt=""></a>
+                    <a class="btn btn-floating pulse socialLinks" href="mailto:erick_ruiz23@yahoo.com" target="_blank"><i class="material-icons">email</i></a>                    
                 </div>
                 <div class="col s12">
-                    <h1>Skills</h1>
-                </div> 
-            </div>
-        </div>
-        <div id="content" class="row">
-            <h2 id="recentProjectsText">Here are some of my recent projects :)</h2>
-            <div class="col s12 projectContainer">
-                <div class="col s12 m5 projects">
-                    <h2>hello</h2>
-                </div>
-                <div class="col s12 m6 projectDetails">
-                    <h1 class="projectTitle">Pinterest Clone</h1>
-                    <p>With only one week to clone <a href="https://www.pinterest.com/">Pinterest</a>, a team of me and two other developers successfuly cloned pinterest. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit dolores quisquam nam voluptatum voluptate nulla iure odit magnam minima! Debitis fugit impedit temporibus nemo voluptatum officia eaque sapiente laborum sint.</p>
+                    <p>Made by me, Erick Ruiz | 2017</p>
                 </div>
             </div>
-            <div class="col s12 projectContainer">
-                    <div class="col s12 m5 projects">
-                        <h2>hello</h2>
-                    </div>
-                    <div class="col s12 m6 projectDetails">
-                        <h1 class="projectTitle">StubHub Clone</h1>
-                        <p>With only one week to clone <a href="https://www.StubHub.com/">StubHub</a>, a team of me and two other developers successfuly cloned pinterest. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit dolores quisquam nam voluptatum voluptate nulla iure odit magnam minima! Debitis fugit impedit temporibus nemo voluptatum officia eaque sapiente laborum sint.</p>
-                    </div>
-                </div>
         </div>
-        <div id="footer">
-            <p> I am the footer, and you have scroll down to see me.</p>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>
