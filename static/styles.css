@@ -32,7 +32,9 @@
 #scroll{
     font-size: 1.2rem;
 }#aboutMe{
-    background-color: wheat;
+    background: repeating-linear-gradient(45deg,#161616,#040404 10px,#161616 10px,#040404 20px);
+    margin-bottom: 0px;
+    color: white;
 }
 #aboutMeContainer{
    padding: 20px;
@@ -49,8 +51,13 @@
 #welcomeText{
     text-align: center;
 }
+#bio{
+    font-size: 1.4vw;
+}
 #content{
     margin: 0px auto;
+    background: linear-gradient(#181818, #292929);
+    color: white;
 }
 .alignTextCenter{
     text-align: center;
@@ -58,9 +65,10 @@
     margin-top: 0px;    
 }
 .projectContainer{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     padding: 50px;
     width: 100%;
+    margin-top: 20px;
 }
 #recentProjectsText{
     font-size: 4vw;  
