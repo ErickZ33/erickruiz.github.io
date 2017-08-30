@@ -31,41 +31,58 @@
 }
 #scroll{
     font-size: 1.2rem;
+}#aboutMe{
+    background-color: wheat;
 }
 #aboutMeContainer{
    padding: 20px;
 }
 #aboutMeHeader img{
-    width: 20%;
-    margin-left: 50px;
+    width: 50%;
+    display: inline-block;
+    display: block;
+    margin: 0 auto;
+}
+#aboutMeText{
+    font-size: 2vw;      
+}
+#welcomeText{
+    text-align: center;
 }
 #content{
-    padding:100px 50px;
-    width:80%;
-    margin:0px auto;
+    margin: 0px auto;
 }
 .alignTextCenter{
     text-align: center;
+    font-size: 3vw;
+    margin-top: 0px;    
 }
 .projectContainer{
-    height: 350px;
     border-bottom: 1px solid black;
     padding: 50px;
+    width: 100%;
+}
+#recentProjectsText{
+    font-size: 4vw;  
+    text-align: center;
+    margin-top: 20px;   
+}
+.projectTitle{
+    margin-top: 20px;
+    font-size: 4vw;   
+    text-align: center;    
 }
 .projects{
-    width: 300px;
-    height: 250px;
+    height: 200px;
     border: 1px solid black;
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 .projectDetails{
     display: inline-block;
     vertical-align: top;
     height: 250px;
-}
-#content h2{
-    margin:0px 0px 30px 0px;
+    width: 50%;
 }
 #footer{
     padding:30px 0px;

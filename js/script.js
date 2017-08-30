@@ -37,9 +37,28 @@ $(document).ready(function () {
         fullscreen();
     });
 
-    $("#scroll").click(function () {
+    $("#scrollToHome").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#hero").offset().top
+        }, 2000);
+    });
+
+    $("#scrollToAboutMe").click(function () {
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top
         }, 2000);
     });
+
+    $("#scrollToProjects").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#content").offset().top
+        }, 2000);
+    });
+
+    $("#scrollToFooter").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#footer").offset().top
+        }, 2000);
+    });
+    
 })
