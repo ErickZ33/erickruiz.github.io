@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    
     function fullscreen() {
         jQuery('#hero').css({
             width: jQuery(window).width(),
@@ -9,6 +10,7 @@ $(document).ready(function () {
 
     fullscreen();
 
+    
     var words = ["build web applications.", "solve problems.", "love coding."],
         el = document.getElementById('magic'),
         word_counter = 0,
@@ -37,7 +39,7 @@ $(document).ready(function () {
 
     $("#scroll").click(function () {
         $('html, body').animate({
-            scrollTop: $("#content").offset().top
+            scrollTop: $("#aboutMe").offset().top
         }, 2000);
     });
 })

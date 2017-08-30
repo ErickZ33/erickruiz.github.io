@@ -32,6 +32,13 @@
 #scroll{
     font-size: 1.2rem;
 }
+#aboutMeContainer{
+   padding: 20px;
+}
+#aboutMeHeader img{
+    width: 20%;
+    margin-left: 50px;
+}
 #content{
     padding:100px 50px;
     width:80%;
