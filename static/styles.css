@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
 #hero{
     background-image:url('background.jpg');
@@ -45,10 +46,12 @@
     display: inline-block;
     display: block;
     margin: 0 auto;
+    visibility: hidden;    
 }
 .aboutMeText{
     font-size: 16px;  
     color:#764E46; 
+    visibility: hidden;
 }
 #welcomeText{
     text-align: center;
@@ -58,8 +61,6 @@
 }
 #content{
     margin: 0px auto;
-    /* background: linear-gradient(#181818, #292929); */
-    /* background: repeating-linear-gradient(45deg,#161616,#040404 10px,#161616 10px,#040404 20px);   */
     background-color: #F5F6F7;
     padding: 30px;  
     border-bottom: 1px solid #292323;
@@ -77,6 +78,9 @@
     text-align: center;
     color: black;
     margin-bottom: 5%;
+    font-weight: 100;
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
 }
 .projectTitle{
     text-align: center;    
@@ -116,6 +120,9 @@
     color: #fff;
     margin-right: 10px;
     vertical-align: top;
+}
+.chip{
+    margin-right: 20px;
 }
 @media screen and (min-width: 480px) {
 

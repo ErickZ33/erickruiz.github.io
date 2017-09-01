@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    
     function fullscreen() {
         jQuery('#hero').css({
             width: jQuery(window).width(),
@@ -9,6 +8,10 @@ $(document).ready(function () {
     }
 
     fullscreen();
+
+    jQuery(window).resize(function () {
+        fullscreen();
+    });
 
     
     var words = ["build web applications.", "solve problems.", "love coding."],
@@ -33,10 +36,6 @@ $(document).ready(function () {
     }
     setInterval(updateText, 100);
 
-    jQuery(window).resize(function () {
-        fullscreen();
-    });
-
     $("#scrollToHome").click(function () {
         $('html, body').animate({
             scrollTop: $("#hero").offset().top
@@ -60,5 +59,28 @@ $(document).ready(function () {
             scrollTop: $("#footer").offset().top
         }, 2000);
     });
-    
+
+    $(window).scroll(function() {
+        $('#aboutMeHeader img').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("expandUp");
+            }
+        });
+    });
+
+    $(window).scroll(function() {
+        $('.aboutMeText').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("fadeIn3");
+            }
+        });
+    });
+
+
 })
