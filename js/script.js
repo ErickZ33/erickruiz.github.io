@@ -66,7 +66,7 @@ $(document).ready(function () {
 
         var topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+400) {
-                $(this).addClass("expandUp");
+                $(this).addClass("slideRight");
             }
         });
     });
@@ -77,9 +77,9 @@ $(document).ready(function () {
 
         var topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+400) {
-                $(this).addClass("fadeIn3");
+                $(this).addClass("slideLeft");
             }
         });
     });
-    
+
 })
