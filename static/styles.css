@@ -4,24 +4,12 @@
     font-weight: 100;
 }
 #hero{
-    /* background-image:url('background.jpg') no-repeat center center fixed;
+    background :url('background.jpg') no-repeat center center fixed;
     background-size:cover;
-    background-position: center fixed;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;} */
-    background: url(background.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
 }
 .header{
     color: white;
@@ -92,10 +80,9 @@
     padding-bottom: 5%;
     padding-top: 5%;
     margin: 0px;
-    background-image: url('bulb.jpg');
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;    
+    background: url('recent.png') no-repeat center center fixed;
+    background-size:cover;  
+    -webkit-background-size: cover;    
 }
 .projectTitle{
     text-align: center;    
@@ -139,12 +126,11 @@
 .chip{
     margin-right: 20px;
 }
-@media screen and (min-width: 480px) {
-
+@media only screen and (max-width: 735px){
+    #hero {
+    background-attachment: scroll !important;
+    }
+    #recentProjectsText {
+        background-attachment: scroll !important;
+    }
 }
-@media screen and (min-width: 960px) {
-
-}
-@media screen and (min-width: 1024px) {
-
-}   
