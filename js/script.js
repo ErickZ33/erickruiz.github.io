@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
 
     
-    var words = ["building", "solving", "inovation"],
+    var words = ["building", "solving", "innovating"],
         el = document.getElementById('magic'),
         word_counter = 0,
         character_counter = 0;
@@ -81,6 +81,5 @@ $(document).ready(function () {
             }
         });
     });
-
-
+    
 })
