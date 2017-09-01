@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
 
     
-    var words = ["build web applications.", "solve problems.", "love coding."],
+    var words = ["building", "solving", "inovation"],
         el = document.getElementById('magic'),
         word_counter = 0,
         character_counter = 0;
@@ -34,7 +34,7 @@ $(document).ready(function () {
                 word_counter = 0;
         }
     }
-    setInterval(updateText, 300);
+    setInterval(updateText, 250);
 
     $("#scrollToHome").click(function () {
         $('html, body').animate({
