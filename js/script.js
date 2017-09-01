@@ -34,7 +34,7 @@ $(document).ready(function () {
                 word_counter = 0;
         }
     }
-    setInterval(updateText, 100);
+    setInterval(updateText, 250);
 
     $("#scrollToHome").click(function () {
         $('html, body').animate({
