@@ -10,7 +10,7 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .header{
     color: white;
