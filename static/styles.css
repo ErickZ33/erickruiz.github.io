@@ -175,7 +175,7 @@
     animation: cd-pulse 1s infinite;
 }
 .cd-headline.type .cd-words-wrapper.selected {
-    background-color: #aebcb9;
+    background-color: white;
 }
 .cd-headline.type .cd-words-wrapper.selected::after {
     visibility: hidden;
