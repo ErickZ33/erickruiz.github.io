@@ -29,9 +29,10 @@
 .name{
     font-family: monospace;
 }
-#magic{
-    border-right: 2px solid white;
-    display: inline;
+#animatedText{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #learnMoreText{
     bottom: 5.5%;
